@@ -33,7 +33,15 @@ body{
 	padding: 0;
 }
 
-header{
+.hamburger {
+	display: flex;
+	justify-content: left;
+	height: 0.1em;
+	width: 0.9em;
+	margin-left: 30px;
+}
+
+.logo {
 	display: flex;
 	justify-content: center;
 	height: 2.5em;
@@ -63,5 +71,32 @@ header img{
   padding-top: 40px;
   padding-left: 8px;
   padding-right: 30px;
-  background: linear-gradient(rgba(0, 0, 0, 0.65) 10%, rgba(0, 0, 0, 0) 95%);
+  padding-bottom: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0) 110%);
+}
+
+.middelofpage1 {
+	background-image: url(/images/audi-Q4.avif);
+	width: 100vw; 
+	height: 90vh;
+	background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.middelofpage2 {
+	background-image: url(/images/audi-A5.avif);
+	width: 100vw; 
+	height: 90vh;
+	background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+footer {
+	background-color: black;
+}
+
+footer li{
+	color: white;
 }
