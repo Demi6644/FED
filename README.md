@@ -16,13 +16,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Demi Van Heiningen
 
   #### Je startniveau:
   hier je startniveau (kies uit zwart, rood óf blauw)
+  blauw
 
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
+  surface plane
  
 </details>
 
@@ -37,6 +39,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  ik doe de website van het automerk Audi
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
@@ -57,7 +60,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+dat de knoppen best onduidelijk zijn in de screenreader en dat ik persoonlijk de site niet soepel kon gebruiken.
+dat de plaatjes die onder de knoppen zitten geen goede alt tag/ beschrijving hebben en daarom dus ook verwarrend overkomen in de screenreader.
 </details>
 
 
