@@ -47,6 +47,13 @@ body{
 	height: 2.5em;
 }
 
+header{
+	position: relative;
+	z-index: 2;
+	background-color: white;
+	height: 12vh;
+}
+
 header img{
 	width: 75px;
 	height: auto;
@@ -61,27 +68,213 @@ header img{
 	background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
+	position: relative;
 }
 
 .startofpage h1{
-  font-family: "Raleway", sans-serif;
-  font-size: 2.20em;
-  font-weight: 400;
-  color: #eee;
-  padding-top: 40px;
-  padding-left: 8px;
-  padding-right: 30px;
-  padding-bottom: 100px;
-  background: linear-gradient(rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0) 110%);
+	position: absolute;
+	z-index: 1;
+  	font-family: "Raleway", sans-serif;
+  	font-size: 2.20em;
+  	font-weight: 400;
+  	color: #eee;
+  	margin-top: 0.5em;
+  	left: 0.4em;
 }
+
+.startofpage h2{
+	position: absolute;
+	z-index: 1;
+  	font-family: "Raleway", sans-serif;
+  	font-size: 1.5em;
+  	font-weight: 400;
+  	color: #eee;
+  	margin-top: 4.5em;
+  	left: 0.6em;
+}
+
+.startofpage a:nth-of-type(1){
+	position: absolute;
+	bottom: 120px;
+	left: 10px;
+	color: black;
+	background-color: white;
+	padding: 30px;
+	font-size: 1.2em;
+	margin-top: 500px;
+}
+
+.startofpage a:nth-of-type(2){
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
+	color: white;
+	font-size: 1.2em;
+	margin-top: 500px;
+	border: 2px solid white;
+	padding: 30px;
+}
+
+.startofpage:after {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100vw;
+	height: 90vh;
+	pointer-events: none;
+	content: "";
+	background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0)50%);
+}
+
+.thirdofpage {
+	background: url(/images/Audi-scroll.jpg); 
+	height: 90vh;
+	width: 600vw;
+	background-repeat:no-repeat;
+    background-size:cover;
+	background-position:center;
+	overflow-x: scroll;
+}
+
+.videopart {
+	position: relative;
+}
+
+.videopart h2 {
+	position: absolute;
+	z-index: 1;
+  	font-family: "Raleway", sans-serif;
+  	font-size: 2.20em;
+  	font-weight: 400;
+  	color: #eee;
+  	margin-top: 6em;
+  	left: 0.4em;
+}
+
+.videopart h3 {
+	position: absolute;
+	z-index: 1;
+  	font-family: "Raleway", sans-serif;
+  	font-size: 1.5em;
+  	font-weight: 400;
+  	color: #eee;
+  	margin-top: 14em;
+  	left: 0.6em;
+}
+
+.video-background {
+	width: 100vw;
+	height: 90vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.video-background video {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 90vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.videopart a:nth-of-type(1){
+	position: absolute;
+	bottom: 120px;
+	left: 10px;
+	color: black;
+	background-color: white;
+	padding: 30px;
+	font-size: 1.2em;
+	margin-top: 500px;
+	padding: 20px;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.videopart a:nth-of-type(2){
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
+	color: white;
+	font-size: 1.2em;
+	margin-top: 500px;
+	border: 2px solid white;
+	padding: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
 
 .middelofpage1 {
 	background-image: url(/images/audi-Q4.avif);
 	width: 100vw; 
 	height: 90vh;
 	background-repeat:no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position:center;
+	position: relative;
+}
+
+.middelofpage1:after {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100vw;
+	height: 90vh;
+	pointer-events: none;
+	content: "";
+	background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0)50%);
+}
+
+.middelofpage1 h2{
+	position: absolute;
+	z-index: 1;
+  	font-family: "Raleway", sans-serif;
+  	font-size: 2.20em;
+  	font-weight: 400;
+  	color: #eee;
+  	margin-top: 0.5em;
+  	left: 0.4em;
+}
+
+.middelofpage1 h3{
+	position: absolute;
+	z-index: 1;
+  	font-family: "Raleway", sans-serif;
+  	font-size: 1.5em;
+  	font-weight: 400;
+  	color: #eee;
+  	margin-top: 4.5em;
+  	left: 0.6em;
+}
+
+.middelofpage1 a:nth-of-type(1){
+	position: absolute;
+	bottom: 120px;
+	left: 10px;
+	color: black;
+	background-color: white;
+	padding: 20px;
+	font-size: 1.2em;
+	margin-top: 500px;
+	padding-left: 130px;
+	padding-right: 130px;
+}
+
+.middelofpage1 a:nth-of-type(2){
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
+	color: white;
+	font-size: 1.2em;
+	margin-top: 500px;
+	border: 2px solid white;
+	padding: 20px;
+	padding-left: 75px;
+	padding-right: 75px;
 }
 
 .middelofpage2 {
@@ -99,4 +292,9 @@ footer {
 
 summary {
 	color: white;
+}
+
+video {
+	height: 90vh;
+	width: 100vw;
 }
