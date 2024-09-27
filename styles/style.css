@@ -136,6 +136,10 @@ header img{
 	overflow-x: scroll;
 }
 
+.smallpart {
+	padding: 20px;
+}
+
 .videopart {
 	position: relative;
 }
