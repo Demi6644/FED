@@ -16,13 +16,25 @@
 </head>
 
 <body>
-	<header>
-		<section class="hamburger">
-			<img src="images/hamburger.png" alt="">
-		</section>
-		<section class="logo">
-			<img src="images/Audi-Logo.1.jpg" alt="">
-		</section>
+	<header id="top">
+		<nav>
+            <button class="buttonhamburger">
+				<img src="/images/hamburger.png" alt="Icon to open Hamburger menu">
+			</button>
+				<img src="/images/Audi-Logo.1.jpg" alt="audi logo" class="logo">
+            <ul>
+				<li>
+					<button class="buttonKruis">
+						<img src="/images/kruis.png" alt="Cross to close the hamburger menu">
+					</button>
+				</li>
+                <li><a href="index.html"><img src="/images/Audi-Logo.1.jpg" alt="Audi logo"></a></li>
+                <li><a href="#">aanschaf & lease</a></li>
+                <li><a href="#">elektrisch</a></li>
+                <li><a href="#">Service en acessoires</a></li>
+                <li><a href="#">Audi wereld</a></li>
+            </ul>
+        </nav>
 	</header>
 	<main>
 		<!-- main section:nth-of-type(1) ipv .startofpage -->
@@ -37,11 +49,37 @@
 			<h2>Onze uitgelichte modellen</h2>
 			<a>Klik hier voor alle modellen</a>
 		</section>
-		<section class="thirdofpage">
-			<h3>Nieuwe A3 sportback</h3>
-			<h4>vanaf € 38.551,99 incl. btw en bpm </h4>
-			<a>Configureren</a>
-			<a>ontdekken</a>
+		<section class="carousel">
+				<div class="carousel-item active">
+					<img src="/images/scroll-Audi1.png" alt="Foto 1">
+					<div class="carousel-caption">
+						<h2>De nieuwe A3 Sportback</h2>
+						<h3>Vanaf 38.551,99 incl. btw en bpm</h3>
+						<a>Configureren</a>
+						<a>ontdekken</a>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/images/scroll-Audi2.png" alt="Foto 2">
+					<div class="carousel-caption">
+						<h2>Nieuwe A5 Avant</h2>
+						<h3>vanaf 57.990,00 incl. btw en bpm</h3>
+						<a>Configureren</a>
+						<a>ontdekken</a>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/images/scroll-Audi3.png" alt="Foto 3">
+					<div class="carousel-caption">
+						<h2>Nieuwe A6 Avant e-tron</h2>
+						<h3>vanaf 77.490,01 incl. btw en bpm</h3>
+						<a>Configureren</a>
+						<a>ontdekken</a>
+					</div>
+				</div>
+				<button id="prev" class="carousel-control prev"><</button>
+   		 		<button id="next" class="carousel-control next">></button>
+		</section>
 		</section>
 		<section class="smallpart">
 			<a>Gemiddeld brandstofverbruik:6,2_5,2 l/100 km; gemiddeld CO2 emissie:141-119 g/km</a>
@@ -70,15 +108,34 @@
 			<a>ontdek de Avant A5</a>
 			<a>ontdek de A5 limousine</a>
 		</section>
-		<section>
+		<section class="endofpage1">
 			<h2>Direct een Audi rijden</h2>
 			<h3>nieuw uit voorraad of een occasion</h3>
-			<a>nieuw rijden</a>
+		</section>
+		<section class="endofpage2">
+			<a>Direct rijden</a>
 			<a>bekijk de occasions</a>
+		</section>
+		<section class="imagesection">
+			<img src="/images/Audi-laag1.avif" alt="" class="carimage">
+			<h2>Bekijk de nieuwe Audi Q5</h2>
+		</section>
+		<section class="imagesection">
+			<img src="/images/Audi-laag2.avif" alt="" class="carimage">
+			<h2>Hou mij op de hoogte over de nieuwe A6 e-tron.</h2>
+		</section>
+		<section class="imagesection">
+			<img src="/images/Audi-laag3.avif" alt="" class="carimage">
+			<h2>Stories of progress</h2>
+		</section>
+		<section class="imagesection">
+			<img src="/images/Audi-laag4.avif" alt="" class="carimage">
+			<h2>ontvang Audi-nieuws als eerste.</h2>
 		</section>
 
 	</main>
 	<footer>
+		<a href="#top">Terug naar boven</a>
 		<details>
 			<summary>Modellen</summary>
 			<a href="#"><p>alle modellen</p></a>
@@ -103,8 +160,44 @@
 			<a href="#"><p>Prive financiering</p></a>
 			<a href="#"><p>Autoverzekering</p></a>
 		</details>
+		<details>
+			<summary>elektrisch</summary>
+			<a href="#"><p>elektrisch rijden</p></a>
+			<a href="#"><p>elektrische modellen</p></a>
+			<a href="#"><p>plug-in-hybride rijden</p></a>
+			<a href="#"><p></p>plug-in-hybride modellen</a>
+			<a href="#"><p>kosten en onderhoud</p></a>
+			<a href="#"><p>opladen</p></a>
+			<a href="#"><p>actieradius</p></a>
+			<a href="#"><p>duurzaam rijden</p></a>
+			<a href="#"><p>Audi e-care</p></a>
+			<a href="#"><p>laadtips</p></a>
+		</details>
+		<details>
+			<summary>service & acessoires</summary>
+			<a href="#"><p>dealer zoeken</p></a>
+			<a href="#"><p>onderhoud en reparatie</p></a>
+			<a href="#"><p>schade en pech</p></a>
+			<a href="#"><p></p>navigatie en infotainment</a>
+			<a href="#"><p>Audi originele acessoires</p></a>
+			<a href="#"><p>garantie</p></a>
+			<a href="#"><p>Audi webshop</p></a>
+			<a href="#"><p>Werkplaatsafspraak</p></a>
+			<a href="#"><p>kopen en afleveren</p></a>
+			<a href="#"><p>klantenservice</p></a>
+			<a href="#"><p>informatie universele autobedrijven</p></a>
+			<a href="#"><p>Audi connect</p></a>
+		</details>
+		<details>
+			<summary>Audi wereld</summary>
+			<a href="#"><p>Stories of progress</p></a>
+			<a href="#"><p>Audi sport</p></a>
+			<a href="#"><p>Audi R & RS</p></a>
+			<a href="#"><p></p>Audi exclusive</a>
+			<a href="#"><p>Beleef audi</p></a>
+			<a href="#"><p>Audi newsroom</p></a>
+		</details>
 	</footer>
-	
 
 	<script defer src="scripts/script.js"></script>
 </body>
