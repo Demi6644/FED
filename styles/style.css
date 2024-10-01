@@ -32,42 +32,20 @@ html{
 	scroll-behavior: smooth;
 }
 
-body{
+#page1 body{
 	margin: 0;
 	padding: 0;
 }
 
 header{
 	display: flex;
-	align-items: center;
 	background-color: white;
 	width: 100%;
 	height: 12vh;
 	position: relative;
-}
-
-header ul {
-    background-color: white;
-    transform: translate(0%, 0%);
-    transition: 0.5s ease-in-out;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    padding:1em;
-	z-index: 10;
-}
-
-header li {
-    border-bottom:0.1em solid black;
-    padding:1.5em;
-}
-
-header li a {
-    color: black;
-    font-size:1em;
-    font-weight:bold;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -75,36 +53,57 @@ button {
     border:none;
 }
 
-header img:nth-of-type(1) {
-	height: 20px;
-	width: 40px;
-}
-
-header img:nth-of-type(2) {
-	height: 40px;
+ header button img{
+	position: absolute;
+	height: 10px;
 	width: 30px;
+	left: 17px;
+	bottom: 35px;
 }
 
-header nav ul{
+header button p{
+	position: absolute;
+	left: 60px;
+	bottom: 10px;
+	font-size: 1.5em;
+}
+
+ header img {
+	width: 70px;
+	height: 30px;
+}
+
+nav {
 	display: none;
+    width:100vw;
+    height:100vh;
+}
+
+nav ul {
+    background-color: white;
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    padding:1em;
+	z-index: 1;
 	list-style: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: white; /* Voeg achtergrond toe als nodig */
-    width: 250px; /* Maak het menu breed genoeg */
-    padding: 10px;
 }
 
-header nav ul.toonmenu{
-	display: block;
+nav ul li{
+	padding-bottom: 20px;
+	padding-left: 10px;
+	font-size: 1.5em;
 }
 
-.buttonkruis{
-	z-index: 10;
+nav ul li a{
+    padding-right: 80px;
+	text-decoration: none;
+	font-weight: 100;
+	color: rgb(67, 67, 67);
+    font-size:1em;
 }
 
-.startofpage {
+#page1 section:nth-of-type(1) {
 	background-image: url(/images/Audi-home-foto.avif);
 	width: 100vw; 
 	height: 100vh;
@@ -114,7 +113,7 @@ header nav ul.toonmenu{
 	position: relative;
 }
 
-.startofpage h1{
+#page1 section:nth-of-type(1) h1{
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -125,7 +124,7 @@ header nav ul.toonmenu{
   	left: 0.4em;
 }
 
-.startofpage h2{
+#page1 section:nth-of-type(1) h2{
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -136,7 +135,7 @@ header nav ul.toonmenu{
   	left: 0.6em;
 }
 
-.startofpage a:nth-of-type(1){
+#page1 section:nth-of-type(1) a:nth-of-type(1){
 	position: absolute;
 	bottom: 120px;
 	left: 10px;
@@ -147,7 +146,7 @@ header nav ul.toonmenu{
 	margin-top: 500px;
 }
 
-.startofpage a:nth-of-type(2){
+#page1 section:nth-of-type(1) a:nth-of-type(2){
 	position: absolute;
 	bottom: 30px;
 	left: 10px;
@@ -158,7 +157,7 @@ header nav ul.toonmenu{
 	padding: 30px;
 }
 
-.startofpage:after {
+#page1 section:nth-of-type(1):after {
 	top: 0;
 	left: 0;
 	position: absolute;
@@ -169,16 +168,16 @@ header nav ul.toonmenu{
 	background: linear-gradient(to bottom, rgb(47, 47, 47) 0%, rgba(255, 255, 255, 0)50%);
 }
 
-.secondofpage {
+#page1 section:nth-of-type(2) {
 	text-align: center;
 }
 
-.secondofpage h2{
+#page1 section:nth-of-type(2) h2{
 	font-weight: 100;
 	font-size: 2em;
 }
 
-.secondofpage a{
+#page1 section:nth-of-type(2) a{
 	display: inline-block; 
   	color: black; 
   	text-decoration: none; 
@@ -188,7 +187,7 @@ header nav ul.toonmenu{
 }
 
 
-.carousel {
+#page1 section:nth-of-type(3) {
     position: relative;
     overflow: hidden;
 	font-family: Arial, sans-serif;
@@ -200,7 +199,7 @@ header nav ul.toonmenu{
     background-color: white;
 }
 
-.carousel:after {
+#page1 section:nth-of-type(3):after {
 	top: 0;
 	left: 0;
 	position: absolute;
@@ -212,13 +211,13 @@ header nav ul.toonmenu{
 }
 
 
-.carousel-item img {
+#page1 .carousel-item img {
     width: 100vw;
     height: 90vh;
     object-fit: cover; /* Zorgt ervoor dat de afbeelding wordt bijgesneden indien nodig, maar altijd de container vult */
 }
 
-.carousel-caption h2{
+#page1 .carousel-caption h2{
     position: relative;
     bottom: 220px;
     left: 20px;
@@ -228,7 +227,7 @@ header nav ul.toonmenu{
 	font-weight: 100;
 }
 
-.carousel-caption h3{
+#page1 .carousel-caption h3{
     position: relative;
     bottom: 215px;
     left: 20px;
@@ -238,7 +237,7 @@ header nav ul.toonmenu{
 	font-weight: 100;
 }
 
-.carousel-caption a:nth-of-type(1){
+#page1 .carousel-caption a:nth-of-type(1){
 	position: absolute;
 	bottom: 60px;
 	left: 40px;
@@ -252,7 +251,7 @@ header nav ul.toonmenu{
 	z-index: 2;
 }
 
-.carousel-caption a:nth-of-type(2){
+#page1 .carousel-caption a:nth-of-type(2){
 	position: absolute;
 	bottom: 10px;
 	left: 40px;
@@ -267,7 +266,7 @@ header nav ul.toonmenu{
 }
 
 
-.carousel-item {
+#page1 .carousel-item {
     position: absolute;
     width: 90%;
     height: 100%;
@@ -277,12 +276,12 @@ header nav ul.toonmenu{
     transition: opacity 0.5s ease, left 1s ease;
 }
 
-.carousel-item.active {
+#page1 .carousel-item.active {
     left: 0;
     opacity: 1;
 }
 
-.carousel-control {
+#page1 .carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -295,29 +294,32 @@ header nav ul.toonmenu{
     z-index: 1;
 }
 
-.prev {
+#page1 .prev {
     left: 0;
 	background-color: white;
 	padding: 3px;
 	z-index: 10;
 }
 
-.next {
+#page1 .next {
     right: 0;
 	background-color: white;
 	padding: 3px;
 	z-index: 10;
 }
 
-.smallpart {
+#page1 section:nth-of-type(4) {
 	padding: 20px;
 }
 
-.videopart {
+#page1 section:nth-of-type(5) {
 	position: relative;
+	width: 100vw;
+	height: 90vh;
+	overflow: hidden;
 }
 
-.videopart h2 {
+#page1 section:nth-of-type(5) h2 {
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -328,7 +330,7 @@ header nav ul.toonmenu{
   	left: 0.4em;
 }
 
-.videopart h3 {
+#page1 section:nth-of-type(5) h3 {
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -339,14 +341,7 @@ header nav ul.toonmenu{
   	left: 0.6em;
 }
 
-.video-background {
-	width: 100vw;
-	height: 90vh;
-	position: relative;
-	overflow: hidden;
-}
-
-.video-background video {
+#page1 section:nth-of-type(5) video {
 	position: absolute;
 	top: 50%;
     left: 50%;
@@ -357,7 +352,7 @@ header nav ul.toonmenu{
     object-fit: cover;
 }
 
-.videopart a:nth-of-type(1){
+#page1 section:nth-of-type(5) a:nth-of-type(1){
 	position: absolute;
 	bottom: 120px;
 	left: 10px;
@@ -371,7 +366,7 @@ header nav ul.toonmenu{
 	padding-right: 90px;
 }
 
-.videopart a:nth-of-type(2){
+#page1 section:nth-of-type(5) a:nth-of-type(2){
 	position: absolute;
 	bottom: 30px;
 	left: 10px;
@@ -385,7 +380,7 @@ header nav ul.toonmenu{
 }
 
 
-.middelofpage1 {
+#page1 section:nth-of-type(6) {
 	background-image: url(/images/audi-Q4.avif);
 	width: 100vw; 
 	height: 90vh;
@@ -395,7 +390,7 @@ header nav ul.toonmenu{
 	position: relative;
 }
 
-.middelofpage1:after {
+#page1 section:nth-of-type(6):after {
 	top: 0;
 	left: 0;
 	position: absolute;
@@ -406,7 +401,7 @@ header nav ul.toonmenu{
 	background: linear-gradient(to bottom, rgb(24, 23, 23) 0%, rgba(255, 255, 255, 0)25%);
 }
 
-.middelofpage1 h2{
+#page1 section:nth-of-type(6) h2{
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -417,7 +412,7 @@ header nav ul.toonmenu{
   	left: 0.4em;
 }
 
-.middelofpage1 h3{
+#page1 section:nth-of-type(6) h3{
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -428,7 +423,7 @@ header nav ul.toonmenu{
   	left: 0.6em;
 }
 
-.middelofpage1 a:nth-of-type(1){
+#page1 section:nth-of-type(6) a:nth-of-type(1){
 	position: absolute;
 	bottom: 120px;
 	left: 10px;
@@ -441,7 +436,7 @@ header nav ul.toonmenu{
 	padding-right: 130px;
 }
 
-.middelofpage1 a:nth-of-type(2){
+#page1 section:nth-of-type(6) a:nth-of-type(2){
 	position: absolute;
 	bottom: 30px;
 	left: 10px;
@@ -454,7 +449,7 @@ header nav ul.toonmenu{
 	padding-right: 75px;
 }
 
-.middelofpage2 {
+#page1 section:nth-of-type(7) {
 	background-image: url(/images/audi-A5.avif);
 	width: 100vw; 
 	height: 90vh;
@@ -464,7 +459,7 @@ header nav ul.toonmenu{
 	position: relative;
 }
 
-.middelofpage2 h2 {
+#page1 section:nth-of-type(7) h2 {
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -475,7 +470,7 @@ header nav ul.toonmenu{
   	left: 0.4em;
 }
 
-.middelofpage2 h3 {
+#page1 section:nth-of-type(7) h3 {
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -486,7 +481,7 @@ header nav ul.toonmenu{
   	left: 0.6em;
 }
 
-.middelofpage2 a:nth-of-type(1){
+#page1 section:nth-of-type(7) a:nth-of-type(1){
 	position: absolute;
 	bottom: 120px;
 	left: 10px;
@@ -499,7 +494,7 @@ header nav ul.toonmenu{
 	margin-top: 450px;
 }
 
-.middelofpage2 a:nth-of-type(2) {
+#page1 section:nth-of-type(7) a:nth-of-type(2) {
 	position: absolute;
 	bottom: 30px;
 	left: 10px;
@@ -512,7 +507,7 @@ header nav ul.toonmenu{
 	padding-right: 65px;
 }
 
-.endofpage1 {
+#page1 section:nth-of-type(8) {
 	background-image: url(/images/Audi-laatste.avif);
 	width: 100vw; 
 	height: 90vh;
@@ -522,7 +517,7 @@ header nav ul.toonmenu{
 	position: relative;
 }
 
-.endofpage1:after {
+#page1 section:nth-of-type(8):after {
 	top: 0;
 	left: 0;
 	position: absolute;
@@ -534,7 +529,7 @@ header nav ul.toonmenu{
 }
 
 
-.endofpage1 h2 {
+#page1 section:nth-of-type(8) h2 {
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -546,7 +541,7 @@ header nav ul.toonmenu{
 	right: 2em;
 }
 
-.endofpage1 h3 {
+#page1 section:nth-of-type(8) h3 {
 	position: absolute;
 	z-index: 1;
   	font-family: "Raleway", sans-serif;
@@ -558,14 +553,14 @@ header nav ul.toonmenu{
 	right: 4em;
 }
 
-.endofpage2{
+#page1 section:nth-of-type(9){
 	background-color: black;
 	padding: 40px;
 	display: block;
 	align-items: center;
 }
 
-.endofpage2 a:nth-of-type(1){
+#page1 section:nth-of-type(9) a:nth-of-type(1){
 	color: black;
 	background-color: white;
 	padding: 20px;
@@ -576,7 +571,7 @@ header nav ul.toonmenu{
 	margin-bottom: 10px;
 }
 
-.endofpage2 a:nth-of-type(2) {
+#page1 section:nth-of-type(9) a:nth-of-type(2) {
 	color: white;
 	font-size: 1.2em;
 	border: 2px solid white;
@@ -613,6 +608,37 @@ header nav ul.toonmenu{
 	object-fit: cover;
 	display: block;
 }
+
+#page2 section:nth-of-type(1){
+	text-align: center;
+}
+
+#page2 section:nth-of-type(1) h1 {
+	font-size: 1.8em;
+	color: #2f2f2f;
+}
+
+#page2 section:nth-of-type(1) p {
+	font-size: 1.2em;
+	color: #2f2f2f;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+#page2 main section img{
+	width: 330px;
+	height: 180px;
+	padding-left: 15px;
+}
+
+#page2 main section h2{
+	font-size: 1.5em;
+	padding-left: 15px;
+
+}
+
 
 footer {
 	background-color: black;
