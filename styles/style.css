@@ -104,7 +104,7 @@ nav ul li a{
 }
 
 #page1 section:nth-of-type(1) {
-	background-image: url(/images/Audi-home-foto.avif);
+	background-image: url(../images/Audi-home-foto.png);
 	width: 100vw; 
 	height: 100vh;
 	background-repeat:no-repeat;
@@ -381,7 +381,7 @@ nav ul li a{
 
 
 #page1 section:nth-of-type(6) {
-	background-image: url(/images/audi-Q4.avif);
+	background-image: url(../images/audi-Q4.png);
 	width: 100vw; 
 	height: 90vh;
 	background-repeat:no-repeat;
@@ -450,7 +450,7 @@ nav ul li a{
 }
 
 #page1 section:nth-of-type(7) {
-	background-image: url(/images/audi-A5.avif);
+	background-image: url(../images/audi-A5.png);
 	width: 100vw; 
 	height: 90vh;
 	background-repeat:no-repeat;
