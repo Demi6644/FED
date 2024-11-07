@@ -525,7 +525,7 @@ nav ul li a{
 }
 
 #page1 section:nth-of-type(8) {
-	background-image: url(../FED/images/Audi-laatste.png);
+	background-image: url(../images/Audi-laatste.png)!important;
 	width: 100vw; 
 	height: 90vh;
 	background-repeat:no-repeat;
